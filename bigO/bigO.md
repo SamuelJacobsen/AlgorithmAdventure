@@ -1,41 +1,42 @@
 # Big O Notation
 
-A **notação Big O** é uma forma de descrever o desempenho de um algoritmo em termos de **tempo de execução** ou **uso de memória**, à medida que o tamanho da entrada cresce. Ela é uma ferramenta fundamental para analisar a eficiência de algoritmos.
+The **Big O notation** is a way to describe the performance of an algorithm in terms of **execution time** or **memory usage** as the input size grows. It is a fundamental tool for analyzing algorithm efficiency.
 
 ---
 
-## 🌟 **Por que usar Big O?**
+## 🌟 **Why use Big O?**
 
-- **Comparar algoritmos:** Ajuda a entender qual é mais eficiente para diferentes tamanhos de entrada.
-- **Previsão de desempenho:** Permite estimar o impacto de grandes quantidades de dados.
-- **Foco no pior caso:** Garante que você esteja preparado para os cenários mais exigentes.
-
----
-
-## ⏱ **Tempo de execução vs. Crescimento**
-
-O tempo de execução de um algoritmo é medido pelo **crescimento** de sua complexidade em relação ao **tamanho da entrada (n)**.
-
-- **Crescimento menor:** Algoritmo mais eficiente.
-- **Crescimento maior:** Algoritmo menos eficiente para grandes entradas.
-
-### ⚖ **Comparação de complexidades comuns**
-| Notação Big O  | Nome                          | Exemplo de algoritmo            | Crescimento          |
-|-----------------|-------------------------------|----------------------------------|----------------------|
-| O(1)           | Constante                     | Acesso direto a um índice       | 🔵 Constante         |
-| O(log n)       | Logarítmica                   | Busca binária                   | 🔵 Cresce devagar    |
-| O(n)           | Linear                        | Iteração simples                | 🟡 Cresce moderado   |
-| O(n log n)     | Linear-logarítmica            | Merge Sort, Quick Sort          | 🟡 Moderado/rápido   |
-| O(n²)          | Quadrática                    | Bubble Sort, Selection Sort     | 🔴 Cresce rápido     |
-| O(2ⁿ)          | Exponencial                   | Problemas de decisão com backtracking | 🔴 Muito rápido  |
-| O(n!)          | Fatorial                      | Algoritmos de permutação        | 🔴 Extremamente rápido |
+- **Algorithm comparison:** Helps understand which algorithm is more efficient for different input sizes.
+- **Performance prediction:** Allows estimating the impact of large amounts of data.
+- **Focus on worst-case:** Ensures preparedness for the most demanding scenarios.
 
 ---
 
-## 🛠 **Como analisar a complexidade?**
+## ⏱ **Execution Time vs. Growth**
 
-1. **Identifique o tamanho da entrada (n):** Exemplo: número de elementos em um array.
-2. **Conte operações dominantes:** Ignore constantes e termos de menor ordem.
-3. **Use a notação Big O:** Expresse o comportamento do algoritmo à medida que o tamanho da entrada cresce indefinidamente (\`n → ∞\`).
+The execution time of an algorithm is measured by its complexity growth relative to the **input size (n)**.
+
+- **Lower growth:** More efficient algorithm.
+- **Higher growth:** Less efficient algorithm for large inputs.
+
+### ⚖ **Comparison of common complexities**
+| Big O Notation | Name                          | Example Algorithm               | Growth               |
+|----------------|-------------------------------|---------------------------------|----------------------|
+| O(1)           | Constant                      | Direct access to an index       | 🔵 Constant          |
+| O(log n)       | Logarithmic                   | Binary search                   | 🔵 Slow growth       |
+| O(n)           | Linear                        | Simple iteration                | 🟡 Moderate growth   |
+| O(n log n)     | Linear-logarithmic            | Merge Sort, Quick Sort          | 🟡 Moderate/fast     |
+| O(n²)          | Quadratic                     | Bubble Sort, Selection Sort     | 🔴 Fast growth        |
+| O(2ⁿ)          | Exponential                   | Backtracking decision problems  | 🔴 Very fast          |
+| O(n!)          | Factorial                     | Permutation algorithms          | 🔴 Extremely fast    |
 
 ---
+
+## 🛠 **How to analyze complexity?**
+
+1. **Identify the input size (n):** Example: number of elements in an array.
+2. **Count dominant operations:** Ignore constants and lower-order terms.
+3. **Use Big O notation:** Express the algorithm's behavior as the input size grows indefinitely (\`n → ∞\`).
+
+---
+

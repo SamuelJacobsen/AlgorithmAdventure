@@ -1,11 +1,11 @@
-function somaArray(array) {
-    let soma = 0;  // O(1) - Inicialização constante
-    for (let elemento of array) {  // O(n) - Percorre todos os elementos do array
-        soma += elemento;  // O(1) - Soma cada elemento
+function sumArray(array) {
+    let sum = 0;  // O(1) - Constant initialization
+    for (let element of array) {  // O(n) - Iterates through all elements of the array
+        sum += element;  // O(1) - Adds each element
     }
-    return soma;  // O(1) - Retorna o resultado final
+    return sum;  // O(1) - Returns the final result
 }
 
-// Análise:
-// - O loop é o elemento dominante, com O(n).
-// - Complexidade total: O(n).
+// Analysis:
+// - The loop is the dominant element with O(n).
+// - Total complexity: O(n).

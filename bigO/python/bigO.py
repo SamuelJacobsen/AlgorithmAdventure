@@ -1,10 +1,10 @@
-def soma_array(array):
-    # Inicializa a soma em 0
-    soma = 0  # O(1) - Operação constante
-    for elemento in array:  # O(n) - Percorre todos os elementos do array
-        soma += elemento  # O(1) - Soma cada elemento
-    return soma  # O(1) - Retorna o resultado final
+def sum_array(array):
+    # Initialize the sum to 0
+    sum = 0  # O(1) - Constant time operation
+    for element in array:  # O(n) - Iterate through all elements of the array
+        sum += element  # O(1) - Add each element to the sum
+    return sum  # O(1) - Return the final result
 
-# Análise:
-# - O loop é o elemento dominante, com O(n).
-# - Complexidade total: O(n).
+# Analysis:
+# - The loop is the dominant factor, with O(n).
+# - Overall complexity: O(n).
